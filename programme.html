@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programme — Les Humanistes</title>
+  <meta name="description" content="Le programme des Humanistes, classé par thème.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="entete">
+    <div class="conteneur entete__barre">
+      <a class="marque" href="index.html" aria-label="Les Humanistes, accueil">
+        <img src="assets/logo.svg" alt="" width="44" height="44">
+        <span class="marque__nom">Les<br><span>Humanistes</span></span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="nav__bouton" type="button" aria-expanded="false" aria-controls="menu">
+          <span class="nav__bouton-icone" aria-hidden="true"></span> Menu
+        </button>
+        <ul class="nav__liste" id="menu">
+          <li><a class="nav__lien" href="index.html">Accueil</a></li>
+          <li><a class="nav__lien" href="valeurs.html">Nos valeurs</a></li>
+          <li><a class="nav__lien" href="programme.html" aria-current="page">Programme</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <section class="entete-page">
+      <div class="conteneur">
+        <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> / Programme</nav>
+        <h1>Le programme</h1>
+        <p class="chapo"><span class="a-rediger">[Introduction : la méthode et l'esprit du programme.]</span></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="conteneur">
+        <div class="recherche">
+          <label for="champ-recherche" class="lien-evitement">Rechercher une proposition</label>
+          <input id="champ-recherche" type="search" placeholder="Rechercher une proposition…" autocomplete="off">
+        </div>
+        <div class="filtres" role="group" aria-label="Filtrer par thème">
+          <button class="filtre" type="button" data-filtre="tous" aria-pressed="true">Tous les thèmes</button>
+          <button class="filtre" type="button" data-filtre="sante" aria-pressed="false">Santé</button>
+          <button class="filtre" type="button" data-filtre="travail" aria-pressed="false">Travail et salaires</button>
+          <button class="filtre" type="button" data-filtre="education" aria-pressed="false">Éducation</button>
+          <button class="filtre" type="button" data-filtre="logement" aria-pressed="false">Logement</button>
+          <button class="filtre" type="button" data-filtre="ecologie" aria-pressed="false">Écologie</button>
+          <button class="filtre" type="button" data-filtre="services-publics" aria-pressed="false">Services publics</button>
+          <button class="filtre" type="button" data-filtre="democratie" aria-pressed="false">Démocratie</button>
+          <button class="filtre" type="button" data-filtre="international" aria-pressed="false">International</button>
+        </div>
+
+        <section class="theme" id="sante" data-theme="sante">
+          <h2 class="theme__titre-h">
+            <button class="theme__entete" type="button" aria-expanded="false" aria-controls="corps-sante">
+              <span class="theme__titre"><span class="theme__pastille" aria-hidden="true">Sa</span><span>Santé</span></span>
+              <span class="theme__plus" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="theme__corps" id="corps-sante" hidden>
+            <p><span class="a-rediger">[Constat et objectifs du thème « Santé ».]</span></p>
+            <ol class="propositions">
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+            </ol>
+          </div>
+        </section>
+        <section class="theme" id="travail" data-theme="travail">
+          <h2 class="theme__titre-h">
+            <button class="theme__entete" type="button" aria-expanded="false" aria-controls="corps-travail">
+              <span class="theme__titre"><span class="theme__pastille" aria-hidden="true">Tr</span><span>Travail et salaires</span></span>
+              <span class="theme__plus" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="theme__corps" id="corps-travail" hidden>
+            <p><span class="a-rediger">[Constat et objectifs du thème « Travail et salaires ».]</span></p>
+            <ol class="propositions">
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+            </ol>
+          </div>
+        </section>
+        <section class="theme" id="education" data-theme="education">
+          <h2 class="theme__titre-h">
+            <button class="theme__entete" type="button" aria-expanded="false" aria-controls="corps-education">
+              <span class="theme__titre"><span class="theme__pastille" aria-hidden="true">Éd</span><span>Éducation</span></span>
+              <span class="theme__plus" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="theme__corps" id="corps-education" hidden>
+            <p><span class="a-rediger">[Constat et objectifs du thème « Éducation ».]</span></p>
+            <ol class="propositions">
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+            </ol>
+          </div>
+        </section>
+        <section class="theme" id="logement" data-theme="logement">
+          <h2 class="theme__titre-h">
+            <button class="theme__entete" type="button" aria-expanded="false" aria-controls="corps-logement">
+              <span class="theme__titre"><span class="theme__pastille" aria-hidden="true">Lo</span><span>Logement</span></span>
+              <span class="theme__plus" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="theme__corps" id="corps-logement" hidden>
+            <p><span class="a-rediger">[Constat et objectifs du thème « Logement ».]</span></p>
+            <ol class="propositions">
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+            </ol>
+          </div>
+        </section>
+        <section class="theme" id="ecologie" data-theme="ecologie">
+          <h2 class="theme__titre-h">
+            <button class="theme__entete" type="button" aria-expanded="false" aria-controls="corps-ecologie">
+              <span class="theme__titre"><span class="theme__pastille" aria-hidden="true">Éc</span><span>Écologie</span></span>
+              <span class="theme__plus" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="theme__corps" id="corps-ecologie" hidden>
+            <p><span class="a-rediger">[Constat et objectifs du thème « Écologie ».]</span></p>
+            <ol class="propositions">
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+            </ol>
+          </div>
+        </section>
+        <section class="theme" id="services-publics" data-theme="services-publics">
+          <h2 class="theme__titre-h">
+            <button class="theme__entete" type="button" aria-expanded="false" aria-controls="corps-services-publics">
+              <span class="theme__titre"><span class="theme__pastille" aria-hidden="true">SP</span><span>Services publics</span></span>
+              <span class="theme__plus" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="theme__corps" id="corps-services-publics" hidden>
+            <p><span class="a-rediger">[Constat et objectifs du thème « Services publics ».]</span></p>
+            <ol class="propositions">
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+            </ol>
+          </div>
+        </section>
+        <section class="theme" id="democratie" data-theme="democratie">
+          <h2 class="theme__titre-h">
+            <button class="theme__entete" type="button" aria-expanded="false" aria-controls="corps-democratie">
+              <span class="theme__titre"><span class="theme__pastille" aria-hidden="true">Dé</span><span>Démocratie</span></span>
+              <span class="theme__plus" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="theme__corps" id="corps-democratie" hidden>
+            <p><span class="a-rediger">[Constat et objectifs du thème « Démocratie ».]</span></p>
+            <ol class="propositions">
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+            </ol>
+          </div>
+        </section>
+        <section class="theme" id="international" data-theme="international">
+          <h2 class="theme__titre-h">
+            <button class="theme__entete" type="button" aria-expanded="false" aria-controls="corps-international">
+              <span class="theme__titre"><span class="theme__pastille" aria-hidden="true">In</span><span>International</span></span>
+              <span class="theme__plus" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="theme__corps" id="corps-international" hidden>
+            <p><span class="a-rediger">[Constat et objectifs du thème « International ».]</span></p>
+            <ol class="propositions">
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+              <li><span class="a-rediger">[Proposition à rédiger.]</span></li>
+            </ol>
+          </div>
+        </section>
+
+        <p class="aucun-resultat" hidden>Aucune proposition ne correspond à votre recherche.</p>
+      </div>
+    </section>
+
+    <section class="section fond-noir">
+      <div class="conteneur appel">
+        <h2>Des propositions guidées par nos valeurs.</h2>
+        <a class="bouton bouton--rouge" href="valeurs.html">Relire nos valeurs</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied__grille">
+        <div>
+          <a class="marque" href="index.html">
+            <img src="assets/logo.svg" alt="" width="44" height="44">
+            <span class="marque__nom">Les<br><span>Humanistes</span></span>
+          </a>
+          <p style="margin-top:1rem">L'humain, dans sa globalité, au centre de chaque décision.</p>
+        </div>
+        <div>
+          <h3>Le parti</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="valeurs.html">Nos valeurs</a></li>
+            <li><a href="programme.html">Programme</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Informations</h3>
+          <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pied__bas">
+        <span>© <span data-annee></span> Les Humanistes</span>
+        <span>Site en construction : les contenus sont à rédiger.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
